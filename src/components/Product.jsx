@@ -91,7 +91,7 @@ const Product = () => {
             </small>
           </div>
           <div className="red d-flex mx-5 my-2">
-            <p className="text-danger">Get Daily cash With Nespola Card</p>
+            <p className="text-danger m-3">Get Daily cash With Nespola Card</p>
           </div>
         </div>
       </div>
