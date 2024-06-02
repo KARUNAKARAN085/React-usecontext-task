@@ -1,0 +1,19 @@
+.tq{
+    justify-content: space-between;
+}
+.red{
+    display: flex;
+    justify-content: end;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.lab{
+    display: flex;
+    align-items: center;
+}
+.qnumber{
+    font-size: 20px;
+    margin-top: 4px;
+}
