@@ -96,11 +96,11 @@ export const DataProvider = ({ children }) => {
         }
     );   
     
-    return (
+   return (
         <DataContext.Provider value={{data, setData}}>
             {children}
         </DataContext.Provider>
-    )
+    ) 
 }
 
 export const useData = () => useContext(DataContext);

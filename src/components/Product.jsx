@@ -12,15 +12,14 @@ const Product = () => {
   };
 
   const quantitypriceTotali = () => {
-    let n = 1;
-    setNumber((n += number + n - 1));
+    
+    setNumber((() => number + 1));
     let total = 0;
     setTotalp((total += totalp + data.price));
   };
   const quantitypriceTotald = () => {
     if (number > 1) {
-      let n = 1;
-      setNumber((n += number - n - 1));
+      setNumber((() => number - 1));
       let total = 0;
       setTotalp((total += totalp - data.price));
     }
@@ -29,7 +28,7 @@ const Product = () => {
     <div className="container">
       <div className="col">
         <div className="card">
-          <div className="row g-0 m-3">
+          <div className="row m-3">
             <div className="image col-md-4">
               <img src={data.thumbnail} className="img-fluid rounded-start" />
             </div>
@@ -40,6 +39,9 @@ const Product = () => {
                 <p className="card-text">
                   <p className="text-body-secondary">Price: ${data.price}</p>
                 </p>
+                <div>
+                  <p>Stock Left: {data.stock}</p>
+                </div>
                 <form className="d-flex">
                   <label className="lab me-2">Quantity:</label>
                   <div
@@ -78,7 +80,7 @@ const Product = () => {
               <b>SHIPPING :</b>
             </small>
             <small className="subtotal text-secondary">
-              <b>50</b>
+              <b>$50</b>
             </small>
           </div>
           <hr />
